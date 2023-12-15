@@ -45,7 +45,7 @@ const christmasCountdown = () => {
     }
 
     let nextChristmasDate = 'Dec 25, ${nextChristmasYear} 00:00:00',
-        christmasDay = new Date{nextChristmasDate},
+        christmasDay = new Date(nextChristmasDate),
         timeLeft = christmasDay - now
 
     let days = 0,
@@ -97,4 +97,4 @@ const christmasCountdown = () => {
     }
 }      
 
-setInterval(christmasCountdown, 1000)
+setInterval(christmasCountdown, 1000) 
